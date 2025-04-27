@@ -1,0 +1,49 @@
+:root {
+    --color-primary: rgb(100, 150, 100);
+    --large-icon-size: 4rem;
+    --small-icon-size: 2rem;
+    --margin: 1rem;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+img {
+    width: var(--small-icon-size);
+    margin: var(--margin);
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.left {
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.banner-container,
+.sidebar-item {
+    display: flex;
+    align-items: center;
+}
+
+.banner-icon {
+    width: var(--large-icon-size);
+}
+
+.banner-text {
+    color: var(--color-primary);
+    font-size: 2rem;
+}
