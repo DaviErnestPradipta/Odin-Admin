@@ -194,3 +194,19 @@ body {
 .announcement-grid-item {
     padding: var(--margin);
 }
+
+.trending-grid-container {
+    display: grid;
+    grid-column: 1fr;
+    gap: var(--margin);
+}
+
+.trending-grid-item {
+    display: flex;
+    align-items: center;
+}
+
+.trending-account-item {
+    display: flex;
+    flex-direction: column;
+}
