@@ -50,16 +50,33 @@ body {
     grid-template-rows: repeat(10, 1fr);
 }
 
-.sidebar-item:hover {
+.sidebar-item:hover,
+.search-item:hover {
     background-color: var(--first-color);
     color: white;
     transition: var(--transition);
 }
 
-.sidebar-item:hover .sidebar-icon {
+.sidebar-item:hover .sidebar-icon,
+.search-item:hover .search-icon {
     filter: invert(100%);
 }
 
 .sidebar-item:nth-child(7):hover {
     background-color: inherit;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    flex-grow: 1;
 }
