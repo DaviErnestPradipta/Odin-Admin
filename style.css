@@ -56,7 +56,8 @@ body {
 .sidebar-item:hover,
 .search-item:hover,
 .card-item:hover,
-.announcement-grid-item:hover {
+.announcement-grid-item:hover,
+.trending-grid-item:hover {
     background-color: var(--first-color);
     color: white;
     transition: var(--transition);
@@ -64,7 +65,8 @@ body {
 
 .sidebar-item:hover .sidebar-icon,
 .search-item:hover .search-icon,
-.card-item:hover .card-icon {
+.card-item:hover .card-icon,
+.trending-grid-item:hover .account-icon {
     filter: invert(100%);
 }
 
