@@ -3,6 +3,7 @@
     --icon-size: 2rem;
     --margin: 1rem;
     --transition: all 0.25s;
+    --parent-grid: 1fr 4fr;
 }
 
 * {
@@ -22,8 +23,8 @@ img {
 
 body {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-columns: var(--parent-grid);
+    grid-template-rows: var(--parent-grid);
 }
 
 .left {
