@@ -4,6 +4,7 @@
     --margin: 1rem;
     --horizontal-margin: 0 1rem;
     --vertical-margin: 1rem 0;
+    --button-margin: 0.5rem 1rem;
     --transition: all 0.25s;
     --parent-grid: 1fr 4fr;
 }
@@ -99,3 +100,39 @@ body {
     margin: var(--horizontal-margin);
 }
 
+.account-container {
+    display: flex;
+    align-items: center;
+}
+
+.account-container:last-child {
+    margin-right: 0.5rem;
+}
+
+.account-item {
+    margin: 0 0.5rem;
+}
+
+.account-item img {
+    width: calc(2 * var(--size));
+}
+
+.account-item:nth-child(2) {
+    flex-grow: 1;
+}
+
+.account-item strong {
+    font-size: 150%;
+}
+
+.account-item button {
+    padding: var(--button-margin);
+    border-radius: var(--size);
+    background-color: white;
+}
+
+.account-item button:hover {
+    background-color: var(--first-color);
+    color: white;
+    transition: var(--transition);
+}
