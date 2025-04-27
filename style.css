@@ -55,7 +55,7 @@ body {
 
 .sidebar-item:hover,
 .search-item:hover,
-.card-icon-item:hover {
+.card-item:hover {
     background-color: var(--first-color);
     color: white;
     transition: var(--transition);
@@ -63,7 +63,7 @@ body {
 
 .sidebar-item:hover .sidebar-icon,
 .search-item:hover .search-icon,
-.card-icon-item:hover .card-icon {
+.card-item:hover .card-icon {
     filter: invert(100%);
 }
 
@@ -160,6 +160,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     gap: var(--vertical-margin);
+    padding: var(--margin);
 }
 
 .card-item strong {
