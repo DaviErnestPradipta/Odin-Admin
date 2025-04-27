@@ -55,7 +55,8 @@ body {
 
 .sidebar-item:hover,
 .search-item:hover,
-.card-item:hover {
+.card-item:hover,
+.announcement-grid-item:hover {
     background-color: var(--first-color);
     color: white;
     transition: var(--transition);
@@ -167,7 +168,8 @@ body {
     padding: var(--margin);
 }
 
-.card-item strong {
+.card-item strong,
+.announcement-grid-item strong {
     font-size: 125%;
 }
 
@@ -181,4 +183,14 @@ body {
 .announcement-trending {
     display: flex;
     flex-direction: column;
+}
+
+.announcement-grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: var(--margin);
+}
+
+.announcement-grid-item {
+    padding: var(--margin);
 }
