@@ -140,6 +140,10 @@ body {
     transition: var(--transition);
 }
 
+.bottom {
+    display: flex;
+}
+
 .container-label {
     margin: var(--vertical-margin);
 }
@@ -172,4 +176,9 @@ body {
     align-self: flex-end;
     display: flex;
     align-items: center;
+}
+
+.announcement-trending {
+    display: flex;
+    flex-direction: column;
 }
