@@ -121,7 +121,8 @@ body {
     flex-grow: 1;
 }
 
-.account-item strong {
+.account-item strong,
+.container-label {
     font-size: 150%;
 }
 
@@ -135,4 +136,30 @@ body {
     background-color: var(--first-color);
     color: white;
     transition: var(--transition);
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card-item {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.card-item strong {
+    font-size: 125%;
+}
+
+.card-icon-container {
+    justify-content: flex-end;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
 }
