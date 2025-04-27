@@ -1,8 +1,8 @@
 :root {
-    --color-primary: rgb(100, 150, 100);
-    --large-icon-size: 4rem;
-    --small-icon-size: 2rem;
+    --first-color: rgb(100, 150, 100);
+    --icon-size: 2rem;
     --margin: 1rem;
+    --transition: all 0.25s;
 }
 
 * {
@@ -16,7 +16,7 @@ html, body {
 }
 
 img {
-    width: var(--small-icon-size);
+    width: var(--icon-size);
     margin: var(--margin);
 }
 
@@ -39,11 +39,22 @@ body {
     align-items: center;
 }
 
-.banner-icon {
-    width: var(--large-icon-size);
+.banner-text {
+    color: var(--first-color);
+    font-size: var(--icon-size);
 }
 
-.banner-text {
-    color: var(--color-primary);
-    font-size: 2rem;
+.sidebar-container {
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.sidebar-item:hover {
+    background-color: var(--first-color);
+    color: white;
+    transition: var(--transition);
+}
+
+.sidebar-icon:hover {
+    filter: invert(100%);
 }
